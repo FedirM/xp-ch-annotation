@@ -6,7 +6,7 @@ This project is aimed to help annotate chinese text with pinyin. The goal is to 
 
 - Rust (1.30.0 or later)
 - [WASM-Pack](https://github.com/rustwasm/wasm-pack)
-- http-server (optional to run example)
+- http-server (optionally to run example)
 
 ## Building
 
