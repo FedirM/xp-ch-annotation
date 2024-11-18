@@ -36,7 +36,7 @@ pub fn process_zh(text: &str) -> Vec<JsValue> {
         match han
             .as_str()
             .to_pinyin()
-            .filter_map(|o| Some(o?.plain()))
+            .filter_map(|o| Some(o?.with_tone()))
             .collect::<Vec<&str>>()
             .get(0)
         {
