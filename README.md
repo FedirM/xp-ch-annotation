@@ -20,11 +20,11 @@ First you need to build WASM project:
 Now from `pkg` you need import `wasm.js` file to your worker. Then call the only function `process_zh(args: string)`, in response you will get an `Array<{ han: string, pin: string }>`.
 
 ```javascript
-importScripts("./pkg/wasm.js");
+importScripts("./pkg/xp-ch-pinyin-worker.js");
 
 onmessage = function (event) {
   // Initialize wasm_bindgen (load the WASM module)
-  wasm_bindgen("./pkg/wasm_bg.wasm")
+  wasm_bindgen("./pkg/xp-ch-pinyin-worker_bg.wasm")
     .then(() => {
       const data = event.data;
 
